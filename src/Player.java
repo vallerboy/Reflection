@@ -16,6 +16,6 @@ public class Player {
     }
 
     public void printScore(String s) {
-
+          System.out.println("to klasa "  + s);
     }
 }

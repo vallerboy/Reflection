@@ -14,9 +14,9 @@ public class Main {
 
         try {
             Constructor constructor = myClass.getConstructor();
-            Object myClassObj = constructor.getClass().newInstance();
+            Object myClassObj = constructor.newInstance();
             Method methodPrint = myClassObj.getClass().getMethod("printScore", String.class);
-            Object result =  methodPrint.invoke(methodPrint, "test");
+            Object result =  methodPrint.invoke(myClassObj, "test refleksji");
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
