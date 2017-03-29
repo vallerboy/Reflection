@@ -6,11 +6,6 @@ public class Player {
     public String name;
     private String lastname;
 
-    public Player(int score, String name, String lastname) {
-        this.score = score;
-        this.name = name;
-        this.lastname = lastname;
-    }
 
     public String getName(){
         return name;
@@ -20,7 +15,7 @@ public class Player {
         return score;
     }
 
-    public void printScore() {
-        System.out.println("Punkty to: " + score);
+    public void printScore(String s) {
+
     }
 }
