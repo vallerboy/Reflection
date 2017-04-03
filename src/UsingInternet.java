@@ -7,7 +7,8 @@ import java.lang.annotation.Target;
  * Created by OskarPraca on 2017-03-29.
  */
 
-@Target(ElementType.METHOD)
+@Target({ElementType.METHOD})
 @Retention(value = RetentionPolicy.RUNTIME)
 public @interface UsingInternet {
+    String internetGetway();
 }

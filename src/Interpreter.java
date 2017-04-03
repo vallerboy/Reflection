@@ -15,7 +15,9 @@ public class Interpreter {
         Method[] methods = player.getClass().getDeclaredMethods();
         for(Method method : methods){
             if(method.isAnnotationPresent(UsingInternet.class)) {
-                 System.out.println("Metoda " + method.getName() + " korzysta z internetu");
+                UsingInternet usingInternetAnn = method.getAnnotation(UsingInternet.class);
+
+                System.out.println("Metoda " + method.getName() + " korzysta z internetu ("+usingInternetAnn.internetGetway()+")");
             }
         }
 
